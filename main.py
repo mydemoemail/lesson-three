@@ -68,14 +68,39 @@
 ###############
 # ввести рейтинг фильма: если рейтинг равен 5 или 4 - ок, иначе - плохо
 
-film_rating = int(input("Enter film rating: "))
+# film_rating = int(input("Enter film rating: "))
+#
+# if film_rating > 0 and film_rating <= 5:
+#     if film_rating == 4 or film_rating == 5:
+#         print("OK!")
+#     else:
+#         print("Not OK!")
+# else:
+#     print("Incorrect rating!")
+#
+# print("Hello world!")
 
-if film_rating > 0 and film_rating <= 5:
-    if film_rating == 4 or film_rating == 5:
-        print("OK!")
-    else:
-        print("Not OK!")
+
+# 1. create develop branch from master branch
+# 2. create feature branch from develop branch
+# 3.
+
+###
+# ввести с клавиатуры 3 числа
+# - вывести наименьшее из трех чисел
+# - кол-во одинаковых чисел
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+n3 = int(input("Enter third number: "))
+
+# вывести наименьшее из трех чисел
+if n1 < n2 < n3:
+    print(n1)
+elif n2 < n3 < n1:
+    print(n2)
+elif n3 < n2 < n1:
+    print(n3)
 else:
-    print("Incorrect rating!")
+    print("All numbers equals")
 
-print("Hello world!")
