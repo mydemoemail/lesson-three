@@ -25,4 +25,29 @@
 # n1 = number // 1000
 #
 
+# print("Hello world!")
+
+# условия
+# v1
+# n1 = 10
+# n2 = 20
+# v2
+# n1, n2 = 10, 20  # множественное присваивание
+# # print(n1 > n2)
+# # print(n1 >= n2)
+# # print(n1 < n2)
+# # print(n1 <= n2)
+# # print(n1 == n2)  # вернет True если оба операнда равны (одинаковые)
+# # print(n1 != n2)  # вернет True если оба операнда разные
+#
+# print(1 == 1 and 3 == 3)  # вернет True если оба операнда равны True, иначе False
+# print(1 == 1 or 2 == 3)  # вернет True если хотя бы один операнд равен True, иначе False
+#
+# is_valid = False
+# print(is_valid)
+# print(not is_valid)  # not -> инверсия, если значение False - станет True, и наоборот
+
+# print("hello" in "hello world")
+
+####
 
