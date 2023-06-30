@@ -50,17 +50,32 @@
 # print("hello" in "hello world")
 
 ####
-hours = int(input("Enter hours: "))
+# hours = int(input("Enter hours: "))
 
 # if hours >= 12:
 #     print("PM")
 #     print("asdf")
 # else:
 #     print("AM")
+#
+# if 12 <= hours < 24:
+#     print("PM")
+# elif 0 <= hours < 12:
+#     print("AM")
+# else:
+#     print("Incorrect hours!")
 
-if 12 <= hours < 24:
-    print("PM")
-elif 0 <= hours < 12:
-    print("AM")
+###############
+# ввести рейтинг фильма: если рейтинг равен 5 или 4 - ок, иначе - плохо
+
+film_rating = int(input("Enter film rating: "))
+
+if film_rating > 0 and film_rating <= 5:
+    if film_rating == 4 or film_rating == 5:
+        print("OK!")
+    else:
+        print("Not OK!")
 else:
-    print("Incorrect hours!")
+    print("Incorrect rating!")
+
+print("Hello world!")
