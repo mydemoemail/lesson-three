@@ -9,6 +9,7 @@ num2 = int(input("Enter second number: "))
 num3 = int(input("Enter third number: "))
 user_select = int(input("Enter 1 for get min value, enter 2 for get avg: "))
 
+# v1
 if user_select == 1:
     if num1 < num2 < num3:
         print(num1)
@@ -24,4 +25,20 @@ else:
     print("Incorrect selection!")
 
 #####################
+# v2
+match user_select:
+    case 1:
+        if num1 < num2 < num3:
+            print(num1)
+        elif num2 < num1 < num3:
+            print(num2)
+        elif num3 < num1 < num2:
+            print(num3)
+        else:
+            print("Equals!")
+    case 2:
+        print(f"Average: {(num1 + num2 + num3) / 3}")
+    case _:  # аналог else
+        print("Incorrect selection!")
+
 
